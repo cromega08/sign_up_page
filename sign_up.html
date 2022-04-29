@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!--
+
+Authors of icons:
+
+<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/google" title="google icons">Google icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/queen" title="queen icons">Queen icons created by Mayor Icons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Tempo_doloe - Flaticon</a>
+
+-->
+
 
 <head>
     <title>
@@ -8,47 +19,74 @@
 </head>
 <html>
     <main>
+        <header>
+            <img id = "logo" src="imgs/queens.png" alt="Page Logo"/>
+            <p id="brand">Queens</p>
+        </header>
         <body>
             <h1>
                 Sign Up
             </h1>
             <p>
-                Start for free
+                Create an Account
             </p>
+            <hr style = "height: 0.05em; background-color: #000000a2;"/>
             <div>
-                <button class="glow">Sign Up<br/>with Google</button>
-                <button class="glow">Sign Up<br/> with Github</button>
+                <label>               
+                    <button class="glow sign_button"><img src="imgs/google.png" class="icon_button"/>with Google</button>
+                </label>
+                <label>
+                    
+                    <button class="glow sign_button"><img src="imgs/facebook.png" class="icon_button"/>with Facebook</button>
+                </label>
             </div>
-            <div class = "separator">
+            <div id = "separator">
                 <hr class = "hr_s"/>
-                <p>
+                <p style = "margin-left: 0.05rem; margin-right: 0.05rem;">
                     or
                 </p>
                 <hr class = "hr_s"/>
             </div>
             <div>
-                <label for="name">
-                    <input id = "name" type="text" placeholder="First Name"/>
-                    <input id = "name" type="text" placeholder="Second Name"/>
+                <label for="f_name">
+                    <input id = "f_name" type="text" placeholder="First Name" class="glow"/>
+                </label>
+                <label for = "s_name">
+                    <input id = "s_name" type="text" placeholder="Second Name" class = "glow"/>
+                </label>
+                <br/>
+                <label for="username">
+                    <input id="username" type="text" placeholder="Username" class = "resize glow"/>
                 </label>
                 <br/>
                 <label for="email">
-                    <input id="email" type="text" placeholder="E-mail" class = "resize"/>
+                    <input id="email" type="text" placeholder="E-mail" class = "resize glow"/>
                 </label>
                 <br/>
                 <label for = "password">
-                    <input id = "password" type="password" placeholder="Password" class = "resize"/>
+                    <input id = "password" type="password" placeholder="Password" class = "resize glow"/>
                 </label>
             </div>
             <div>
                 <button class= "glow">Back</button>
                 <button class = "glow">Create</button>
             </div>
+            <div>
+                <hr style = "height: 0.05em; background-color: #000000a2;">
+            </div>
         </body>
+        <footer>
+            <p>
+                Made by Cromega<br>
+                <a href="https://github.com/Cromega08">Github</a><br>
+                <a href="https://codepen.io/your-work">CodePen</a>
+            </p>
+            <div >
+                <label>
+                    <button id = "round_main"><img src="imgs/info.png" class = "footer_img"/></button>
+                </label>
+                
+            </div>
+        </footer>
     </main>
-    <footer>
-        <p>
-            You are welcome with us
-        </p>
-    </footer>
 </html>
